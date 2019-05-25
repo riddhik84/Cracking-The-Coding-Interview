@@ -1,3 +1,6 @@
+/*
+Tester class
+*/
 
 public class TestIsUnique {
 	

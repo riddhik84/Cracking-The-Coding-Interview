@@ -1,8 +1,12 @@
+/*
+Given 2 strings, check if one string is permutation of other string.
+*/
+
 import java.util.Arrays;
 
 public class CheckPermutation_1 {
 	public static void main(String[] args){
-		String input1 = "a ab";
+		String input1 = "aab";
 		String input2 = "baa";
 		
 		boolean result = checkPermutation(input1, input2);
@@ -20,6 +24,11 @@ public class CheckPermutation_1 {
 			return false;
 		}
 		
+		//If both strings are same
+		if(input1.equals(input2)){
+			return true;
+		}
+		
 		//Sort both strings and compare if same
 		char[] inputChars1 = input1.toCharArray();
 		Arrays.sort(inputChars1);
@@ -29,13 +38,6 @@ public class CheckPermutation_1 {
 		Arrays.sort(inputChars2);
 		String input2Sorted = new String(inputChars2);
 		
-		System.out.println(input1Sorted);
-		System.out.println(input2Sorted);
-		
-		if (input1Sorted.equals(input2Sorted)){
-			return true;
-		}
-		
-		return false;
+		return input1Sorted.equals(input2Sorted) ? true : false;
 	}
 }

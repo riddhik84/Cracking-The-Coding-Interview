@@ -1,3 +1,6 @@
+/*
+Given 2 strings, check if one string is permutation of other string.
+*/
 
 public class CheckPermutation_2 {
 	public static void main(String[] args){
@@ -17,6 +20,11 @@ public class CheckPermutation_2 {
 		//Return false if the string length not equal
 		if(s1.length() != s2.length()){
 			return false;
+		}
+		
+		//If both strings are same
+		if(s1.equals(s2)){
+			return true;
 		}
 		
 		//Create an array with 127 ASCII characters. Count the occurances of each character in string1.
