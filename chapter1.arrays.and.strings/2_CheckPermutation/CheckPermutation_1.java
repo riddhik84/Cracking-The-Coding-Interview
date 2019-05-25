@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class CheckPermutation {
+public class CheckPermutation_1 {
 	public static void main(String[] args){
 		String input1 = "a ab";
 		String input2 = "baa";
