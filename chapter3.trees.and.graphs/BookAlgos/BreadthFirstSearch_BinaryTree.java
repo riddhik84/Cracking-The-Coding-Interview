@@ -61,7 +61,7 @@ public class BreadthFirstSearch_BinaryTree{
 		* repeat above steps till queue is not empty
 		*/
 		boolean found = false;
-		Queue<Node> BFS_queue = new LinkedList<>();
+		Queue<Node> BFS_queue = new LinkedList<>();   // queue = linkedlist
 		if (head != null){
 			BFS_queue.add(head); // Add head to the queue
 			while(!BFS_queue.isEmpty()){
