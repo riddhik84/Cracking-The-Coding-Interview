@@ -19,7 +19,7 @@ public class RotateMatrix {
 		}
 	}
 	
-	//Solution where additional matrix is required
+	//Solution in which additional matrix is required
 	public static int[][] rotateMatrix(int[][] input_matrix){
 		//Output matrix
 		int[][] output = new int[N][N];

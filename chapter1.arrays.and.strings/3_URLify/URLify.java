@@ -1,8 +1,11 @@
+/*
+URLify space in a String with %20 
+*/
 
 public class URLify {
 	public static void main(String[] args){
 		String input = "Mr John Smith    ";
-		//Truelength = string len till last character (before spaces)
+		//Truelength = string len till last character (before spaces) but including spaces in between the characters
 		int trueLength = 13;
 		
 		String urlified_string = getURLifiedString(input, trueLength);

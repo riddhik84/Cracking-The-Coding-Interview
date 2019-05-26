@@ -1,3 +1,10 @@
+/*
+check if two strings are one change away to be equal by
+- add a character
+- remove a character
+- change a character
+*/
+
 
 public class OneAway {
 	public static void main(String[] args){
@@ -37,6 +44,7 @@ public class OneAway {
 		
 	}
 	
+	//TODO: change function to make it testable
 	public static boolean oneEditInsertRemove(String s1, String s2){
 		int s1_index = 0;
 		int s2_index = 0;
@@ -66,7 +74,5 @@ public class OneAway {
 		}
 		return true;
 	}
-	
-	
 }
 

@@ -1,7 +1,11 @@
+/*
+* Create a compressed string by adding number of chars with each char.
+* If the compressed string is larger than original string, return original string
+*/
 
 public class StringCompression{
 	public static void main(String[] args){
-		String input = "aaaaaaaaaaaaaa";
+		String input = "abcd";
 		
 		String compressedString = getCompressedString(input);
 		System.out.println("Compressed String: " + compressedString);
@@ -21,6 +25,13 @@ public class StringCompression{
 				output.append(input.charAt(i));
 				output.append(consecutiveChars);
 				consecutiveChars = 1;
+				
+				//check if the compressed string is larger. This will save execution time to execute the code till end.
+				if(output.toString().length() > input.length() - 1){
+					//System.out.println("Break");
+					break;
+				}
+				
 			}
 		}
 		//System.out.println("Compressed string: " + output.toString() + " Len: " + output.toString().length());

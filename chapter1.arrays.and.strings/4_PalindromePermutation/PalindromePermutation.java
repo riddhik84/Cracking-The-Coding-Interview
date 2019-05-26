@@ -1,3 +1,7 @@
+/*
+write a function to to find if a string is permutation of pelindrome.
+*/
+
 import java.util.HashMap;
 
 public class PalindromePermutation {
@@ -64,7 +68,7 @@ public class PalindromePermutation {
 	public static boolean checkCharacter(char c){
 		int ch = (int)c;
 		System.out.println("Char: " + ch);
-		if((ch >= 65 && ch <=90) || (ch>=97 && ch<=122)){
+		if((ch >= 65 && ch <=90) || (ch >= 97 && ch <= 122)){
 			return true;
 		} else {
 			return false;
