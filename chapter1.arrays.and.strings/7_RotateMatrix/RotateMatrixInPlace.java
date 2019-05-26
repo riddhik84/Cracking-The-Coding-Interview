@@ -15,9 +15,9 @@ public class RotateMatrixInPlace {
 		}	
 	}
 	
-	public static int[][] rotateMatrixInPlace(int[] matrix){
+	public static int[][] rotateMatrixInPlace(int[][] matrix){
 		//Calculate N
-		int N = input_matrix.length;
+		int N = matrix.length;
 		System.out.println("N: " + N);
 		
 		for (int x = 0; x < N / 2; x++) 
@@ -52,8 +52,9 @@ public class RotateMatrixInPlace {
 		
 		for(int i = 0; i < i_len; i++){
 			for(int j = 0; j < j_len; j++){
-				System.out.println(matrix[i][j]);
+				System.out.print(matrix[i][j] + " ");
 			}
+			System.out.println();
 		}
 	}
 }

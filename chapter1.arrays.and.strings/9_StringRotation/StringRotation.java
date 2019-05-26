@@ -19,6 +19,7 @@ public class StringRotation {
 
 	}
 	
+	//TODO: Refactor to make it testable
 	public static boolean isRotation(String s1, String s2){
 		//To get substring combine s1 + s1 and find s2
 		String fullString = s1 + s1;
@@ -29,7 +30,7 @@ public class StringRotation {
 		}
 	}
 	
-	public static boolean isSubstring(String s1, String s2){
+	public static boolean isSubstring(String s1, String s2){		
 		int index = s1.indexOf(s2);
 		System.out.println(index);
 		//If index is -1 s2 is not substring of s1
