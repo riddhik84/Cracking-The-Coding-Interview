@@ -1,11 +1,9 @@
-
 import java.util.HashMap;
-
 public class WordFreuencies {
   public static void main(String[] args) {
 	  String[] book = {"abc" , "bcd", "test", "tess", "abcd", "", "  ", "aaaa", "aaaa"};
 	  String[] searchWords = {"", "a", "abc", "abcc", "aaaa"};
-	  HashMap<String, Integer>() wordMap = new HashMap<>();
+	  HashMap<String, Integer> wordMap = new HashMap<>();
 	  for (String s : searchWords){
 		  if(wordMap.containsKey(s)){
 			  System.out.println("Word count = " + wordMap.get(s));
