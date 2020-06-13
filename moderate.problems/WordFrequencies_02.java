@@ -1,5 +1,6 @@
 import java.util.HashMap;
-public class WordFreuencies {
+
+public class WordFrequencies_02 {
   public static void main(String[] args) {
 	  String[] book = {"abc" , "bcd", "test", "tess", "abcd", "", "  ", "aaaa", "aaaa"};
 	  String[] searchWords = {"", "a", "abc", "abcc", "aaaa"};
